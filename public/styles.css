@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+body{
+    font-family: 'Lilita One', cursive;
+    background-color: #FCC055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pet_selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: #326199;
+    width: 320px;
+    height: 50px;
+    background-color: #FCC055;
+    text-align: center;
+    font-size: 41px;
+    margin: 1px;
+}
+
+.subtitle{
+    color: #df6e5b;
+    margin: 18px;
+    text-align: center;
+}
+
+.cards, .attacks_cards{
+    display: flex;
+    gap: 10px;
+}
+
+.mokepons_card{
+    width: 131px;
+    height: 132px;
+    text-align: center;
+    background: #FFE17B;
+    padding: 0px;
+    box-sizing: border-box;
+    border-color: #e88d50;
+    border-style: solid;
+    border-width: medium;
+    border-radius: 30px;
+    margin: -2px;
+    color: #df6e5b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    cursor: pointer;
+}
+
+.mokepons_card img{
+    width: 76px;
+}
+
+.mokepons_card:hover {
+    background-color: #326199; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+input{
+    display: none;
+}
+
+#attack_selection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#button_select_pet{
+    width: 16%;
+    height: 35px;
+    margin-top: 19px;
+    padding: 1px;
+    border: 0px;
+    color: #FCC055;
+    background-color: #326199;
+    font-size: 17px;
+    border-radius: 16px;
+    font-family: 'Lilita One', cursive;
+}   
+
+#attack_selection{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.attack_button{
+    background-color: #326199;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    border-color: transparent;
+    width: 100px;
+    color: #FCC055;
+    font-size: 17px;
+    font-family: 'Lilita One', cursive;
+}
+
+#messages{
+    background: #22A699;
+    width: 98px;
+    padding: 9px;
+    margin-top: 13px;
+    border-radius: 20px;
+    text-align: center;
+    color: #FCC055;
+}
+
+#button_restart{
+    width: 88%;
+    height: 22px;
+    margin-top: -5px;
+    padding: 1px;
+    border: 0px;
+    color: #df6e5b;
+    background-color: #FFE17B;
+    font-size: 17px;
+    border-radius: 16px;
+}
+
+.attacks{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    place-items: center;
+    text-align: center;
+}
+
+#view_map {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#view_map button {
+    width: 103px;
+    height: 35px;
+    margin: 2px;
+    padding: 1px;
+    border: 0px;
+    color: #FCC055;
+    background-color: #326199;
+    font-size: 17px;
+    border-radius: 16px;
+    font-family: 'Lilita One', cursive;
+}
+
+#map {
+    margin: 23px;
+}
+
+@media(max-width: 560px) {
+    .cards, .attacks_cards {
+        flex-direction: column;
+    }
+}

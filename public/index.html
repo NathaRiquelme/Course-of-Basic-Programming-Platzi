@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Mokepon</title>
+        <link rel="stylesheet" href="./styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <section id="pet_selection">
+            <h1 class="title">Mokepon</h1>
+
+            <h2 class="subtitle">Choose your pet:</h2>
+
+            <div id="cards_container" class="cards">
+            </div>
+
+            <button id="button_select_pet">Select</button>
+        </section>
+
+        <section id="view_map">
+            <h2 class="subtitle">Travel the map with your Mokepon</h2>
+            <canvas id="map"></canvas>
+            <button 
+            onmouseup="stopMovement()"
+            ontouchend="stopMovement()"
+            onmousedown="moveUp()"
+            ontouchstart="moveUp()"
+            >Up</button>
+            <button 
+            onmouseup="stopMovement()"
+            ontouchend="stopMovement()"
+            onmousedown="moveLeft()"
+            ontouchstart="moveLeft()"
+            >Left</button>
+            <button 
+            onmouseup="stopMovement()"
+            ontouchend="stopMovement()"
+            onmousedown="moveDown()"
+            ontouchstart="moveDown()"
+            >Down</button>
+            <button 
+            onmouseup="stopMovement()"
+            ontouchend="stopMovement()"
+            onmousedown="moveRight()"
+            ontouchstart="moveRight()"
+            >Right</button>
+        </section>
+
+        <section id="attack_selection">
+            <h1 class="title">Mokepon</h1>
+
+            <h2 class="subtitle">Choose your attack:</h2>
+
+            <div id="attacks_container" class="attacks_cards">
+            </div>
+ 
+            <div class="attacks">
+                <div class="players_attacks">
+                    <p id="players_lives">0</p>
+                    <p id="pet_player"></p>
+                    <div id="players_attack"></div>
+                </div>
+
+                <div class="rivals_attacks">
+                    <p id="rivals_lives">0</p>
+                    <p id="rivals_pet"></p>
+                    <div id="rivals_attack"></div>
+                </div>
+            </div>
+
+            <div id="messages">
+                <p id="result">Good luck!</p>
+
+            <section id="restart">
+                <button id="button_restart">Restart</button>
+            </section>
+        </div>
+        </section>
+        <script src="./js/mokepon.js"></script>
+    </body>
+</html>
